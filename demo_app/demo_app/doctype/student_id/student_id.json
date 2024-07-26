@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2024-06-11 12:16:01.077661",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fke4",
+  "name1",
+  "register_number",
+  "email_id",
+  "gender",
+  "column_break_ikaq",
+  "phone",
+  "department",
+  "dob",
+  "section_break_ioz7",
+  "marks",
+  "total_marks",
+  "total_maximum_marks",
+  "total_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_fke4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "name1.register_number",
+   "fieldname": "register_number",
+   "fieldtype": "Data",
+   "label": "Register Number"
+  },
+  {
+   "fetch_from": "register_number.name1",
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Student",
+   "unique": 1
+  },
+  {
+   "fetch_from": "name1.email_id",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fetch_from": "name1.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "column_break_ikaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "name1.phone",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fetch_from": "name1.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fetch_from": "name1.dob",
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "Dob"
+  },
+  {
+   "fieldname": "section_break_ioz7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "marks",
+   "fieldtype": "Table",
+   "label": "Marks",
+   "options": "Mark"
+  },
+  {
+   "fieldname": "total_marks",
+   "fieldtype": "Data",
+   "label": "Total Marks"
+  },
+  {
+   "fieldname": "total_percentage",
+   "fieldtype": "Percent",
+   "label": "Total Percentage"
+  },
+  {
+   "fieldname": "total_maximum_marks",
+   "fieldtype": "Data",
+   "label": "Total Maximum Marks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-12 11:48:42.084457",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "Student ID",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

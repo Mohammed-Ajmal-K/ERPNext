@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:student_name",
+ "creation": "2024-06-08 11:58:38.087753",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_o6y9",
+  "student_name",
+  "register_number",
+  "email_id",
+  "department",
+  "column_break_ohou",
+  "course",
+  "dob",
+  "phone",
+  "section_break_b2xm",
+  "address",
+  "parent_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_o6y9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "register_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Register Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Data",
+   "label": "Course"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Data",
+   "label": "Dob"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "column_break_ohou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_b2xm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "parent_name",
+   "fieldtype": "Data",
+   "label": "Parent Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-08 14:23:51.217702",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "Student Profile",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
